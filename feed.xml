@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tokopedia Engineering</title>
+    <description>Tokopedia Engineering blog</description>
+    <link>http://tokopedia.github.io/dotX/</link>
+    <atom:link href="http://tokopedia.github.io/dotX/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 23 Jan 2016 23:06:16 +0700</pubDate>
+    <lastBuildDate>Sat, 23 Jan 2016 23:06:16 +0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;We are moving the Tokopedia tech blog to jekyll and github. It was previously hosted on Wordpress, but we guess this is a much better fit. Hopefully, you will see more regular posts as well.&lt;/p&gt;
+
+&lt;p&gt;Got any suggestions on what we should blog about? File all bugs/feature requests at &lt;a href=&quot;https://github.com/tokopedia/dotX&quot;&gt;the source repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hello world from tokopedia&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 23 Jan 2016 20:58:35 +0700</pubDate>
+        <link>http://tokopedia.github.io/dotX/welcome</link>
+        <guid isPermaLink="true">http://tokopedia.github.io/dotX/welcome</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Starting-up within Microsoft: Maguro</title>
+        <description>&lt;iframe src=&quot;https://docs.google.com/presentation/d/14x8kWwWA7_bdQBaE0IfBv9OpbiYfMAAkQdVXDcEfurg/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&quot; width=&quot;640&quot; height=&quot;389&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;you-might-be-thinking-what-does-starting-up-within-microsoft-mean&quot;&gt;You might be thinking, what does “&lt;em&gt;Starting-up within Microsoft&lt;/em&gt;” mean?&lt;/h4&gt;
+
+&lt;p&gt;Though it is not very common, at &lt;a href=&quot;http://www.microsoft.com/&quot;&gt;Microsoft&lt;/a&gt; we occasionally incubate products or technologies from a ground-up. Typically at any group at Microsoft we do have &lt;em&gt;short-term&lt;/em&gt;, &lt;em&gt;mid-term&lt;/em&gt; and &lt;em&gt;long-term&lt;/em&gt; focus. Incubation of new technologies can happen for different focuses and needs and mostly they are considered as &lt;em&gt;long-term bets&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;maguro--the-big-tuna&quot;&gt;Maguro ~ The Big Tuna&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/tuna.jpg&quot; alt=&quot;Big Tuna&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Source: &lt;a href=&quot;http://channel.nationalgeographic.com/wicked-tuna/articles/bluefin-tuna-101/&quot;&gt;nationalgeographic.com&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Maguro means tuna in Japanese language. But, why we incubated Maguro? We were not &lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;, our index was only a fraction of what Google had in 2010, and we did not have as big of a budget as Google.&lt;/p&gt;
+
+&lt;p&gt;We realized that one way to stay alive is to increase our index size, so our goal was to scale our index size from low to high &lt;em&gt;tens of Billion Documents&lt;/em&gt; with technology that can support up to &lt;em&gt;1 Trillion documents&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using the current architecture, then, was not financially feasible as it will be too expensive, besides it will hit a perf bottleneck at that scale. Hence we incubated Maguro, a system for efficiently searching very large collections of text content of up to 1 trillion documents at low cost.&lt;/p&gt;
+
+&lt;h3 id=&quot;search-engine&quot;&gt;Search Engine&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-1.png&quot; alt=&quot;Search engine (single box)&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Search engine (single box)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine a single server Search Engine, if each document (forward index unit) and reverse index can be compressed to about says 1kb – with 32GBytes of memory roughly you can hold 32Millions of documents. There are trillions of web documents on the Internet, mathematically roughly 35,000 servers for one copy of index, for about 500-1000 QPS, for 20-30K QPS, means for the capacity you will need 30-60 x 35,000 = 1M – 2M servers. $1-4Bn investment!&lt;/p&gt;
+
+&lt;p&gt;With Maguro we aim to at least build the system with the investment requirement of 1/10th of conventional architecture. We aim to put up to 100M or more docs per node ~ 4Bn docs per segment ~ and let’s say hypothetically the segment size is around 40 nodes; it requires 250 segments for 1Trillion web documents. With 10K machines per capacity unit (serving row) and assume the traffics requires us to build 10 capacity rows; it requires roughly 100K machines roughly 1/10th of the capacity required without Maguro technology.&lt;/p&gt;
+
+&lt;h3 id=&quot;head-vs-tail&quot;&gt;Head vs Tail&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-2.jpg&quot; alt=&quot;Head vs long tail keywords&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Source: &lt;a href=&quot;http://neilpatel.com/2015/03/26/how-to-generate-20000-monthly-search-visitors-through-long-tail-traffic/&quot;&gt;neilpatel.com&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We make money from head contents, but we retain customers from tail contents. If customers search for something that is not in index, since switching cost is virtually zero, they can jump right away. The irony is that the cost to hold up tail contents is way too high.&lt;/p&gt;
+
+&lt;p&gt;The web content distribution follows the Power law distribution, where a relative change in one quantity results in a proportional relative change in the other quantity, independent of the initial size of those quantities: one quantity varies as a power of another. &lt;a href=&quot;#ref-1&quot;&gt;[1]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When resource is limited, it means you need strategy. In statistics, a long tail of some distributions is the portion of the distribution having a large number of occurrences far from the “head” or central part of the distribution. This insight gives you some hints the needs for a different treatment of the web contents.&lt;/p&gt;
+
+&lt;p&gt;With such insight that the web content is mostly skewed towards the tail content, we can devise a strategy &lt;em&gt;where the existing system can be used to serve the head content and focus on the solution targeting the long tail content&lt;/em&gt;. Hence we incubated Maguro for the long tail of content with less dynamics and less metadata, but very good cost efficiency.&lt;/p&gt;
+
+&lt;h3 id=&quot;doc-shard-architecture&quot;&gt;Doc Shard Architecture&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-3.png&quot; alt=&quot;Search engine architecture (doc shard)&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Search engine architecture (doc shard)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Typical search engine architecture is a grid like architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-4.png&quot; alt=&quot;Doc shard (complete answer)&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Doc shard (complete answer)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;To obtain a complete answer, you send query to each of the node of each column and load-balance them to form a complete row.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-5.png&quot; alt=&quot;Doc shard (full row)&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Doc shard (full row)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;From a full row you will get the complete results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-6.png&quot; alt=&quot;Grid architecture&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Grid architecture&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;With grid architecture we can increase our index size simply by expanding the number of columns and increase our capacity through adding more rows. The issue of this architecture is when one row is down for maintenance, the rest of the rows are serving the traffics. You don’t want that to happen, you want to have enough rows to keep up with the loads.&lt;/p&gt;
+
+&lt;p&gt;The capacity of each node with conventional architecture is fairly limited ~ 32 Millions web documents. How do we increase the capacity of a single node?&lt;/p&gt;
+
+&lt;h3 id=&quot;term-shard-architecture&quot;&gt;Term Shard Architecture&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-7.png&quot; alt=&quot;Nodes&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Nodes&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-8.png&quot; alt=&quot;Segment&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Segment&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The approach to increase the capacity of a single node is to replace the single node with a cluster of nodes, we call this node now a “&lt;em&gt;segment&lt;/em&gt;“. Inside of the segment each node will work in collaboration to answer a query. This should solve the capacity problem, but new challenges arises:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Query execution becomes distributed&lt;/em&gt;, some terms might be on one node and some other terms on different nodes. So how do you do intersects or union in distributed fashion?&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Transferring data over the network becomes bottleneck!&lt;/em&gt; Hence the needs for at least 10Gbps network. Some of the other techniques we do to help solve the data transfer over the network is by combining multiple words into single word and doing the processing offline. So imagine the query “&lt;em&gt;william tanuwijaya&lt;/em&gt;“, instead of thinking of the query as two words, let’s think of it as a single word and it will result in shorter list and max 250ms query execution latency.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-9.png&quot; alt=&quot;Cluster of nodes (segment)&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Cluster of nodes (segment)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;To increase the capacity per node we also enable technology to serve query from memory, SSD, or disk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-10.png&quot; alt=&quot;Segments&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Segments&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Now each segment represent a super node that can hold up 4Bn docs, and to serve 1 Trillion documents we will use the same grid structure as before.&lt;/p&gt;
+
+&lt;h3 id=&quot;maguro-architecture&quot;&gt;Maguro architecture&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/dotX/assets/img/upload/maguro-11.png&quot; alt=&quot;Maguro architecture&quot; /&gt;
+&lt;span class=&quot;img-caption&quot;&gt;Maguro architecture&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead of treating each node as a single server, each node is now a segment, with a collection of segments to be called as a cluster of nodes, a serving node with term-shard architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“BSDBNS: Build Simple Design but NOT Simpler”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Further reading:&lt;/strong&gt;  &lt;br /&gt;
+Risvik, K., Chilimbi, T., Tan, H., Kalyanaraman, K., &amp;amp; Anderson, C. (n.d.). Maguro, a system for indexing and searching over very large text collections. &lt;em&gt;Proceedings of the Sixth ACM International Conference on Web Search and Data Mining – WSDM ’13&lt;/em&gt;. Retrieved October 7, 2015, from &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2433486&quot;&gt;http://dl.acm.org/citation.cfm?id=2433486&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 06 Oct 2015 15:20:22 +0700</pubDate>
+        <link>http://tokopedia.github.io/dotX/2015/maguro-bing-microsoft/</link>
+        <guid isPermaLink="true">http://tokopedia.github.io/dotX/2015/maguro-bing-microsoft/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
