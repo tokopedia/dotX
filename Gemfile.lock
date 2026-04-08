@@ -1,7 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.8)
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
     backports (3.6.7)
     blankslate (2.1.2.4)
     classifier-reborn (2.0.4)
@@ -67,8 +68,9 @@ GEM
     multipart-post (2.0.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
-    octokit (4.2.0)
-      sawyer (~> 0.6.0, >= 0.5.3)
+    octokit (4.22.0)
+      faraday (>= 0.9)
+      sawyer (~> 0.8.0, >= 0.5.3)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
@@ -76,6 +78,7 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    public_suffix (7.0.5)
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
@@ -89,9 +92,9 @@ GEM
     redcarpet (3.3.3)
     safe_yaml (1.0.4)
     sass (3.4.20)
-    sawyer (0.6.0)
-      addressable (~> 2.3.5)
-      faraday (~> 0.8, < 0.10)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
     slop (3.6.0)
     toml (0.1.2)
       parslet (~> 1.5.0)
